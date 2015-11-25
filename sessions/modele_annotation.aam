@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<annotationModel> 
+	<units>
+		<type name="operatorUtterance">
+			<featureSet> 
+				<feature name="illocutionaryForce"> 
+					<possibleValues> 
+						<value>assertive</value> 
+						<value>directive</value> 
+						<value>commissive</value>
+						<value>expressive</value>
+						<value>declarative</value>
+					</possibleValues> 
+				</feature>
+				<feature name="attitudeType"> 
+					<possibleValues> 
+						<value>affect</value> 
+						<value>evaluation</value> 
+						<value>none</value>
+					</possibleValues> 
+				</feature>
+				<feature name="attitudePolarity"> 
+					<possibleValues> 
+						<value>negative</value> 
+						<value>positive</value>
+						<value>undefined</value>
+						<value>none</value>
+					</possibleValues> 
+				</feature>
+			</featureSet>
+		</type>
+		<type name="nonVerbal">
+			<featureSet> 
+				<feature name="nonVerbaltype"> 
+					<possibleValues> 
+						<value>smile</value>
+						<value>laugh</value>
+						<value>breath</value>
+					</possibleValues> 
+				</feature>
+				<feature name="attitude"> 
+					<possibleValues> 
+						<value>affect</value> 
+						<value>evaluation</value>
+						<value>undefined</value>
+						<value>none</value>
+					</possibleValues> 
+				</feature>
+				<feature name="polarityAttitude"> 
+					<possibleValues> 
+						<value>negative</value> 
+						<value>positive</value> 
+						<value>undefined</value>
+						<value>none</value>
+					</possibleValues> 
+				</feature>
+				<feature name="source"> 
+					<possibleValues> 
+						<value>operator</value> 
+						<value>user</value> 
+					</possibleValues> 
+				</feature>
+			</featureSet> 
+		</type>
+		<type name="sourceInOperatorUtterance">
+			<featureSet>
+				<feature name="roleInCS">				
+					<possibleValues> 
+						<value>user</value>
+						<value>operator</value>
+						<value>otherOperator</value>
+						<value>otherEntityInCS</value>
+						<value>notInCS</value>
+						<value>undefined</value>
+					</possibleValues> 
+				</feature>
+			</featureSet>
+		</type>
+		<type name="sourceInUserUtterance">
+			<featureSet>
+				<feature name="roleInCS">				
+					<possibleValues> 
+						<value>user</value>
+						<value>operator</value> 
+						<value>otherOperator</value>
+						<value>otherEntityInCS</value>
+						<value>notInCS</value>
+						<value>undefined</value>
+					</possibleValues> 
+				</feature>
+			</featureSet>
+		</type>
+		<type name="targetInOperatorUtterance">
+			<featureSet>
+				<feature name="roleInCS">				
+					<possibleValues> 
+						<value>user</value>
+						<value>operator</value>
+						<value>otherOperator</value>
+						<value>otherEntityInCS</value>
+						<value>notInCS</value>
+						<value>undefined</value>
+					</possibleValues> 
+				</feature>
+			</featureSet>
+		</type>
+		<type name="targetInUserUtterance">
+			<featureSet>
+				<feature name="roleInCS">				
+					<possibleValues>
+						<value>user</value>
+						<value>operator</value> 
+						<value>otherOperator</value>
+						<value>otherEntityInCS</value>
+						<value>notInCS</value>
+						<value>undefined</value>
+					</possibleValues> 
+				</feature>
+			</featureSet>
+		</type>
+		<type name="appraisalItem"></type>
+		<type name="subTopic">
+			<featureSet>
+				<feature name="startedBy">				
+					<possibleValues>
+						<value>user</value>
+						<value>operator</value>
+						<value>userAndOperator</value>						
+					</possibleValues> 
+				</feature>
+			</featureSet>
+		</type>
+		<type name="topic">
+			<featureSet>
+				<feature name="startedBy">				
+					<possibleValues>
+						<value>user</value>
+						<value>operator</value>
+						<value>userAndOperator</value>
+					</possibleValues> 
+				</feature>
+			</featureSet>
+		</type>
+		<type name="answer">
+			<featureSet>
+				<feature name="answerType">				
+					<possibleValues>
+						<value>yes</value>
+						<value>no</value>
+						<value>probable</value>
+					</possibleValues> 
+				</feature>
+			</featureSet>
+		</type>
+	</units>
+	<relations>
+		<type name="has_target" oriented="true"></type>
+		<type name="has_source" oriented="true"></type>
+		<type name="preceded_by" oriented="true"></type>
+		<type name="identity" oriented="true"></type>
+		<type name="subClass" oriented="true"></type>
+		<type name="subAspect" oriented="true"></type>
+		<type name="generate_topic" oriented="true"></type>
+		<type name="has_topic" oriented="true"></type>
+		<type name="involvedIn" oriented="true"></type>
+		<type name="appraise" oriented="true"></type>
+		<type name="linkTarget" oriented="true"></type>
+	</relations>
+	<schemas>
+		<type name="userAttitude">
+			<featureSet>
+				<feature name="attitudeType"> 
+					<possibleValues> 
+						<value>affect</value> 
+						<value>evaluation</value> 
+					</possibleValues> 
+				</feature>
+				<feature name="polarity">  
+					<possibleValues> 
+						<value>positive</value> 
+						<value>negative</value> 
+						<value>undefined</value>
+					</possibleValues> 
+				</feature>
+			</featureSet>	
+		</type>
+		<type name="operatorSchema"></type>
+	</schemas>
+</annotationModel>
